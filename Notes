@@ -1,0 +1,5 @@
+To run properly you must do two things, first run the following command to run the container:
+docker run -it     --env="DISPLAY"     --env="QT_X11_NO_MITSHM=1"     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw"     raspcar
+
+Than run cd Adeept-PiCar-B/client and open client.py with vi
+Go down to where the defiinition of the loop function is, and comment out the three lines that involve the logo, no you should be able to run it with python3
